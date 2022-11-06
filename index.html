@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<!-- Listener -->
+		<script type="text/javascript" src="js/listner/mouse.js"></script>
+		<script type="text/javascript" src="js/listner/wheel.js"></script>
+		<script type="text/javascript" src="js/listner/keyboard.js"></script>
+
+		<!-- Shapes -->
+		<script type="text/javascript" src="js/shapes/shape.js"></script>
+		<script type="text/javascript" src="js/shapes/rectangle.js"></script>
+		<script type="text/javascript" src="js/shapes/line.js"></script>
+		<script type="text/javascript" src="js/shapes/circle.js"></script>
+		<script type="text/javascript" src="js/shapes/particle.js"></script>
+
+		<!-- Utils -->
+		<script type="text/javascript" src="js/utils/functions.js"></script>
+		<script type="text/javascript" src="js/utils/config.js"></script>
+		<script type="text/javascript" src="js/utils/graph.js"></script>
+		<script type="text/javascript" src="js/utils/data.js"></script>
+
+		<!-- Components -->
+		<script type="text/javascript" src="js/component/account.js"></script>
+		<script type="text/javascript" src="js/component/arrow.js"></script>
+		<script type="text/javascript" src="js/component/character.js"></script>
+		<script type="text/javascript" src="js/component/credit.js"></script>
+		
+		<script  src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="js/main.js"></script> 
+		<link href="css/style.css" rel="stylesheet" />
+		
+	</head>
+	<body>
+		<div id="drawing-pan" class="drawing-pan">
+			<canvas id="canvas"></canvas>
+			<div id="controller-pan" class="controller-pan hidden">
+
+			</div>
+			<div id="value-pan" class="value-pan hidden">
+				Name <br>
+				Value <br>
+				ID <br>
+			</div>
+		</div>
+		<div id="component-pan" class="component-pan">
+			<div class="col-sm-8">
+				<div class="col-sm-2">
+					<img id="account" src="image/cloud.png" alt="Account" class="component">
+				</div>
+				<div class="col-sm-2">
+					<img id="comment" src="image/square.png" alt="Commnet" class="component">
+				</div>
+				<div class="col-sm-2">
+					<img id="credit" src="image/oval.png" alt="Credit" class="component">
+				</div>
+				<div class="col-sm-2">
+					<img id="expense" src="image/rectangle.png" alt="Expense" class="component">
+				</div>
+				<div class="col-sm-2">
+					<img id="sarrow" src="image/line.png" alt="Stright Arror" class="component">
+				</div>
+				<div class="col-sm-2">
+					<img id="carrow" src="image/curve.jpg" alt="Curve Arror" class="component">
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<button id="edit-save" class="btn save">Edit</button>
+				<button id="run" class="btn run">Run</button>
+				<button id="last-run" class="btn last-run">Last Run</button>
+			</div>
+		</div>
+	</body>
+</html>
